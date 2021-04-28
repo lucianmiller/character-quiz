@@ -14,6 +14,8 @@ $(document).ready(function() {
     console.log("fear: " + fearAnswer);
     console.log("answer total: " + answerTotal);
 
+    $("form#quiz").hide();
+
     if(answerTotal <= 5) {
       $("#chihiro").show().siblings().hide();
     } else if(answerTotal > 5 && answerTotal <= 10) {
