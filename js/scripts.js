@@ -17,7 +17,7 @@ $(document).ready(function() {
     if(answerTotal <= 5) {
       $("#chihiro").show().siblings().hide();
     } else if(answerTotal > 5 && answerTotal <= 10) {
-      $("#haku").show().sibling().hide();
+      $("#haku").show().siblings().hide();
     } else if(answerTotal > 10 && answerTotal <= 15) {
       $("#yubaba").show().siblings().hide();
     } else if(answerTotal > 15 && answerTotal <= 20) {
