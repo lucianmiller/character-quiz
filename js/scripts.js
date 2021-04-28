@@ -6,14 +6,7 @@ $(document).ready(function() {
     const creatureAnswer = parseInt($("input:radio[name=creature]:checked").val());
     const fearAnswer = parseInt($("input:radio[name=fear]:checked").val());
     const answerTotal = hobbyAnswer + feelingsAnswer + jobAnswer + creatureAnswer + fearAnswer
-
-    console.log("hobby: " + hobbyAnswer);
-    console.log("feeling: " + feelingsAnswer);
-    console.log("job: " + jobAnswer);
-    console.log("creature: " + creatureAnswer);
-    console.log("fear: " + fearAnswer);
-    console.log("answer total: " + answerTotal);
-
+    
     $("form#quiz").hide();
 
     if(answerTotal <= 5) {
