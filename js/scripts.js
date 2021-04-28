@@ -12,7 +12,19 @@ $(document).ready(function() {
     console.log("job: " + jobAnswer);
     console.log("creature: " + creatureAnswer);
     console.log("fear: " + fearAnswer);
-    console.log("answer total: " + answerTotal)
+    console.log("answer total: " + answerTotal);
+
+    if(answerTotal <= 5) {
+      $("#chihiro").show().siblings().hide();
+    } else if(answerTotal > 5 && answerTotal <= 10) {
+      $("#haku").show().sibling().hide();
+    } else if(answerTotal > 10 && answerTotal <= 15) {
+      $("#yubaba").show().siblings().hide();
+    } else if(answerTotal > 15 && answerTotal <= 20) {
+      $("#noface").show().siblings().hide();
+    } else {
+      $("#error").show().siblings().hide()
+    }
 
     event.preventDefault();
   });
